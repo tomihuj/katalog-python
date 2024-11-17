@@ -78,6 +78,49 @@ def register_plugin(app):
 - **Key Functions**:
   - **`delete_row`**: Deletes the selected record from the database and updates the table.
 
+#### **4. `filter_plugin.py`**
+- **Purpose**: Filters the records in the table based on user input.
+- **Key Functions**:
+  - **`apply_filter`**: Filters the table dynamically as the user types.
+  - **`clear_filter`**: Clears the filter and restores the full table.
+
+#### **5. `integration_plugin.py`**
+- **Purpose**: Manages remote database configurations and provides a basic login system.
+- **Key Functions**:
+  - **`configure_remote_db`**: Configures remote database settings.
+  - **`login`**: Provides a simple username/password login system.
+
+#### **6. `refresh_plugin.py`**
+- **Purpose**: Refreshes the table data from the database.
+- **Key Functions**:
+  - **`refresh_table`**: Updates the table to reflect the latest data.
+
+#### **7. `settings_plugin.py`**
+- **Purpose**: Manages plugins and database configurations.
+- **Key Functions**:
+  - **`open_settings`**: Provides options to enable/disable plugins and manage database structure.
+
+#### **8. `backup_plugin.py`**
+- **Purpose**: Creates backups of the SQLite database.
+- **Key Functions**:
+  - **`create_backup`**: Saves a timestamped backup of the database to a file.
+
+#### **9. `duplicates_plugin.py`**
+- **Purpose**: Identifies and removes duplicate records in the table.
+- **Key Functions**:
+  - **`find_duplicates`**: Detects duplicates in the database.
+  - **`delete_duplicates`**: Removes all duplicates, keeping one copy of each.
+
+#### **10. `edit_on_double_click_plugin.py`**
+- **Purpose**: Allows editing of records by double-clicking a row in the table.
+- **Key Functions**:
+  - **`edit_record`**: Opens a window to edit the selected record.
+
+#### **11. `export_plugin.py`**
+- **Purpose**: Exports table data to a CSV file.
+- **Key Functions**:
+  - **`export_to_csv`**: Saves the current table data to a user-specified CSV file.
+
 ---
 
 ## Installation and Usage
